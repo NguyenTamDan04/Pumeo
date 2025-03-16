@@ -1,0 +1,66 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+/* Background trang Yes */
+body {
+    background: url('https://i.pinimg.com/originals/a1/20/65/a120653f2795e2de903c4e2e33d241e7.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container chính */
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(255, 94, 120, 0.5);
+    max-width: 500px;
+}
+
+/* Tiêu đề */
+.header-text {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ff5e78;
+    margin-bottom: 20px;
+}
+
+/* Ảnh mèo nhảy */
+.dancing-cat {
+    width: 250px;
+    border-radius: 15px;
+    animation: bounce 1.5s infinite;
+}
+
+/* Hiệu ứng nhảy */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Nút quay lại */
+.back-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #ff5e78;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #ff3c5a;
+}
