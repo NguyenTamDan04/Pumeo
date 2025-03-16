@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love for Pumeo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header-text">My dear meo meoooooo, you must know that I love you – Tdan!!! ❤️🐱</h1>
+        
+        <div class="poem-box">
+            <p>Pumeo be thui, xin mat dung cay,</p>
+            <p>Co anh day, buon cung thanh may.</p>
+            <p>Tua vao anh, di tiep ngay sau,</p>
+            <p>Matcha latte, xoa diu buon dau.</p>
+        </div>
+
+        <div class="image-box">
+            <img src="https://media1.tenor.com/m/AMhM7wcCQCgAAAAd/cat.gif" alt="Cute Cat" class="cat-image">
+            <div class="sticker">❤️</div>
+        </div>
+
+        <!-- Nút lựa chọn -->
+        <div class="button-box">
+            <button class="btn yes-button" onclick="goToYesPage()">Hay qua anh thui oi</button>
+            <button class="btn no-button" id="noButton" onmouseover="moveButton()">Ko hay gi ca anh thui</button>
+        </div>
+    </div>
+
+    <script>
+        function goToYesPage() {
+            window.location.href = "yes.html";
+        }
+        
+        function moveButton() {
+            var x = Math.random() * (window.innerWidth - 150);
+            var y = Math.random() * (window.innerHeight - 50);
+            document.getElementById('noButton').style.position = "absolute";
+            document.getElementById('noButton').style.left = `${x}px`;
+            document.getElementById('noButton').style.top = `${y}px`;
+        }
+    </script>
+</body>
+</html>
