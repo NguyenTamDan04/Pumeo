@@ -1,0 +1,107 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+/* Background có mèo mèo */
+body {
+    background: url('https://i.pinimg.com/originals/a1/20/65/a120653f2795e2de903c4e2e33d241e7.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+}
+
+/* Header */
+.header-text {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Hộp thơ */
+.poem-box {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.poem-box p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Ảnh mèo đặt giữa */
+.image-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cat-image {
+    width: 200px;
+    border-radius: 15px;
+}
+
+/* Sticker trái tim */
+.sticker {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 30px;
+}
+
+/* Nút Yes/No */
+.button-box {
+    margin-top: 20px;
+}
+
+/* Style chung cho button */
+.btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+/* Nút Yes */
+.yes-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.yes-button:hover {
+    background-color: #45a049;
+}
+
+/* Nút No chạy trốn */
+.no-button {
+    background-color: #f44336;
+    color: white;
+    position: absolute;
+}
